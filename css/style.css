@@ -1,0 +1,93 @@
+
+:root {
+    --primary:#fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    font-family: "Poppins" , sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(to right bottom, 
+    rgba(0,0,0,.7 ) 20%,rgba(0,0,0,.2)),
+    url("../Penguins.jpg");
+    color: var(--primary);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.counter-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+h1 {
+    transform: translateY(-120px);
+}
+.big-text {
+    font-size: 3.5rem;
+}
+
+.the-birthday {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: 20px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    background-color: rgba(130, 11, 241, 0.774);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 25px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.the-birthday:focus {
+    outline: none;
+    padding-left: 10px;
+}
+
+
+@media  (max-width:768px) {
+/* 
+    main {
+        color: rgba(147, 132, 167, 0.644);
+    } */
+
+    h1 {
+        transform: translateY(0);
+    }
+
+    .counter-container {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sec-c {
+        transform: translateX(50px);
+    }
+
+}
+
